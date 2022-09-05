@@ -38,24 +38,21 @@ header h3 {
 
 div.main-part {
   display: grid;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 20px;
   border-style: dotted;
   border-color: #9894ba;
-  grid-template-columns:20% 60% auto;
+  grid-template-columns: 20% 60% auto;
   grid-template-areas:"image main-1 main-2"
-							"footer footer footer"
 }
 
-.side {
-  grid-area:image;
-  background-color: #cbcbcb;
-  width: auto;
-  height: 360px;
-  padding: 20px 25px 20px 10px;
-  
+div.side {
+  display: grid;
+  grid-area: image; 
+  place-items: center;
+  opacity: 0.8;
 }
+
+/* 如何不让子元素撑大父容器？ */
 
 .left {
   grid-area:main-1;
@@ -101,3 +98,23 @@ p {
   font-style: normal;
   color: #495C83;
 }
+
+  nav ul {
+    list-style-type: none;
+    line-height: 5px;
+    padding: 2px;
+  }
+
+  nav ul li {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    font-weight: 900;
+  }
+
+  h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    font-weight: 100;
+  }
+
+
